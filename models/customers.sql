@@ -1,3 +1,5 @@
+{{ config(enabled=var('enabled_customers')) }}
+
 with customers as (
 
     select * from {{ ref('stg_customers') }}

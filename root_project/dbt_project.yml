@@ -1,5 +1,5 @@
 
-name: 'jaffle_shop'
+name: 'root_project'
 version: '0.1'
 profile: 'default'
 config-version: 2
@@ -17,10 +17,7 @@ clean-targets:
     - "logs"
 
 vars:
-  enabled_customers: false
-
-models:
   jaffle_shop:
-      materialized: table
-      staging:
-        materialized: view
+    enabled_customers: true
+
+
